@@ -136,8 +136,6 @@ section {
   object-fit: cover;
 }
 
-/* Slightly reduce the heading so that it fits comfortably
-   in the left-hand column. */
 .intro h1 {
   font-size: clamp(2.15rem, 5vw, 3rem);
 }
