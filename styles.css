@@ -113,6 +113,35 @@ section {
   padding-top: 70px;
 }
 
+.intro-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 2.25rem;
+  align-items: start;
+}
+
+.intro-copy {
+  min-width: 0;
+}
+
+.intro-photo {
+  margin: 0;
+}
+
+.intro-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Slightly reduce the heading so that it fits comfortably
+   in the left-hand column. */
+.intro h1 {
+  font-size: clamp(2.15rem, 5vw, 3rem);
+}
+
 h1,
 h2,
 h3 {
@@ -178,7 +207,6 @@ p:last-child {
   grid-template-columns: 180px minmax(0, 1fr);
   gap: 1rem;
   padding: 0.8rem 0;
-  border-bottom: 1px solid var(--line);
 }
 
 .research-areas dt {
@@ -220,8 +248,7 @@ p:last-child {
   grid-template-columns: 88px minmax(0, 1fr);
   gap: 1.25rem;
   padding: 1.1rem 0;
-  border-bottom: 1px solid var(--line);
-}
+  }
 
 .date {
   padding-top: 0.12rem;
@@ -285,6 +312,15 @@ footer {
 
   .intro {
     padding-top: 48px;
+  }
+
+  .intro-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-photo {
+    width: min(100%, 320px);
+    margin-top: 1.5rem;
   }
 
   section {
