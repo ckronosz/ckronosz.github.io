@@ -517,7 +517,7 @@ footer {
 
 /* One column */
 
-@media (max-width: 520px) {
+@media (max-width: 430px) {
   .gallery-header {
     display: block;
     padding-top: 28px;
